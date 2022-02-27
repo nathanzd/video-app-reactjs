@@ -12,4 +12,70 @@
     width: inherit;
     height: inherit;
     background: linear-gradient(to right,#111 30%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:30px ;
+}
+
+.featured_Name{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.featured_Info{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.featured_Points,.featured_Year,.featured_Seasons{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.featured_Points{ 
+    color: #46d369;
+    
+}
+
+.featured_Description{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999;
+    max-width: 40%;
+}
+
+.buttons{
+    margin-top: 15px;
+}
+
+.featured_Play,.featured_AddList{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius:5px ;
+    text-decoration: none;
+    margin-right: 10px;
+    opacity: 1;
+    transition: all ease .2s;
+}
+
+.featured_Play{
+    background-color: #fff;
+    color: #000;
+}
+.featured_AddList{
+    background-color: #333;
+    color: #fff;
+}
+.featured_Play:hover,.featured_AddList:hover{
+    opacity: 0.7;
+}
+
+.featured_Genres{
+    margin-top: 15px;
+    font-size: 18px;
+    color: #999;
 }

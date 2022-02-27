@@ -3,6 +3,13 @@ import styles from './FeaturedMovie.module.css'
 
 
 const FeaturedMovie = ({item}) => {
+  let firstDate=new Date(item.first_air_date);
+  let genres=[];
+  for(let i in item.genres){
+    genres.push(item.genres[i].name);
+  }
+  console.log(genres)
+
   return (
     <section className={`${styles.featured}`} style={{
       backgroundSize:'cover',
@@ -11,7 +18,18 @@ const FeaturedMovie = ({item}) => {
       }} >
       <div className={`${styles.featured_Vertical}`}>
         <div className={`${styles.featured_Horizontal}`}>
-
+          <div className={`${styles.featured_Name}`}>{item.original_name}</div>
+          <div className={`${styles.featured_Info}`}>
+              <div className={`${styles.featured_Points}`}>{item.vote_average} Pontos</div>
+              <div className={`${styles.featured_Year}`}>{firstDate.getFullYear()}</div>
+              <div className={`${styles.featured_Seasons}`}>{item.number_of_seasons} Temporada{item.number_of_seasons !== 1 ? 's':''}</div>
+          </div>
+          <div className={`${styles.featured_Description}`}>{item.overview}</div>
+          <div className={`${styles.buttons}`}>
+              <a href={`watch/${item.id}`}className={`${styles.featured_Play}`} >► Assitir</a>
+              <a href={`list/add/${item.id}`} className={`${styles.featured_AddList}`} >+ Minha Lista</a>
+          </div>
+          <div className={`${styles.featured_Genres}`}><strong>Gêneros:</strong> {genres.join(', ')}</div>
         </div>
       </div>
     </section>
