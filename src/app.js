@@ -5,7 +5,7 @@ import Tmdb from './Tmdb'
 import MovieRow from './Components/MovieRow';
 import FeaturedMovie from './Components/FeaturedMovie';
 import Header from './Components/Header';
-
+import Loading from './Assets/loading.gif'
 
 /*
                 Header
@@ -71,6 +71,12 @@ export const App=()=>{
                     Feito Por nathanzd usando ReactJs.<br/>
                     Todos os dados foram fornecidos pela API do TheMovieDataBase
                 </footer>
+
+                {movieList.length <= 0 && 
+                <div className={`loading`}>
+                    <img src={Loading} alt='carregando'/>
+                </div>}
+                
             </div>
         </React.Fragment>
         

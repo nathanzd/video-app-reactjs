@@ -24,7 +24,7 @@ const FeaturedMovie = ({item}) => {
               <div className={`${styles.featured_Year}`}>{firstDate.getFullYear()}</div>
               <div className={`${styles.featured_Seasons}`}>{item.number_of_seasons} Temporada{item.number_of_seasons !== 1 ? 's':''}</div>
           </div>
-          <div className={`${styles.featured_Description}`}><p>{item.overview.length < 160 ? item.overview:item.overview.substr(0,159)+'...'}</p></div>
+          <div className={`${styles.featured_Description}`}><p>{item.overview.length < 130 ? item.overview:item.overview.substr(0,159)+'...'}</p></div>
           <div className={`${styles.buttons}`}>
               <a href={`watch/${item.id}`}className={`${styles.featured_Play}`} >► Assitir</a>
               <a href={`list/add/${item.id}`} className={`${styles.featured_AddList}`} >+ Minha Lista</a>
