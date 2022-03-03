@@ -1,10 +1,9 @@
-Front-End Plataforma de Streaming
+Front End Streaming Platform
 
-Neste projeto foi utilizado ReactJS para gerar estados reativos, todas as imagens de filmes, descrições, pontuação e etc foram fornecidos pela API do Themoviedb.org.
+In this project ReactJS was used to generate reactive states, all movie images, descriptions, scores and etc were provided by Themoviedb.org API.
 
-O tmdb fornece uma API bem completa com diversas informações e uma documentação detalhada que facilita o desenvolvimento
-os dados são estruturados de forma bem intuitiva.
+tmdb provides a very complete API with a lot of information and detailed documentation that facilitates development, in a way the data is structured in a very intuitive way.
 
-O layout foi baseado no UI/UX da Netflix e possui responsividade para dispositivos moveis como smartphones ou tablets mantendo a usabilidade em ambas plataformas Mobile e Desktop
+The layout was based on Netflix's UI/UX and is responsive for mobile devices such as smartphones or tablets while maintaining usability on both Mobile and Desktop platforms.
 
 <img src="https://raw.githubusercontent.com/nathanzd/video-app-reactjs/main/src/Assets/print.png" alt="Print"/>
